@@ -1,0 +1,76 @@
+.positions-card {
+  min-height: 380px;
+}
+
+.count-pill {
+  font-size: 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.ticker-badge {
+  font-weight: 700;
+  color: #fff;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.pl-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+.pl-tag.profit {
+  color: var(--color-profit);
+  background: var(--color-profit-bg);
+}
+
+.pl-tag.loss {
+  color: var(--color-loss);
+  background: var(--color-loss-bg);
+}
+
+/* Empty state design */
+.empty-positions-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  margin-bottom: 0.85rem;
+  opacity: 0.6;
+}
+
+.empty-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.empty-desc {
+  font-size: 0.85rem;
+  max-width: 320px;
+  line-height: 1.4;
+}
