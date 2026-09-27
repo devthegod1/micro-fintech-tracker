@@ -6,9 +6,16 @@ const portfolioRoutes = require("./routes/portfolioRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
 // Enable Cross-Origin Resource Sharing for frontend communication
-app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Or specify your frontend URL once deployed
+    methods: ["GET", "POST"],
+  }),
+);
 
 // Enable automatic JSON request body parsing
 app.use(express.json());
