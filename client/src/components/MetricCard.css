@@ -1,0 +1,77 @@
+.metric-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.metric-card:hover {
+  border-color: var(--bg-surface-hover);
+  transform: translateY(-2px);
+}
+
+.metric-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.metric-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.metric-icon {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.metric-primary-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.metric-footer {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.metric-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge-positive {
+  color: var(--color-profit);
+  background: var(--color-profit-bg);
+}
+
+.badge-negative {
+  color: var(--color-loss);
+  background: var(--color-loss-bg);
+}
+
+.badge-neutral {
+  color: var(--text-muted);
+  background: rgba(148, 163, 184, 0.1);
+}
